@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "QGMN7468R5"
+	version 	= "1.0.0">
+
+	<name>PhoneGap: Getting Started</name>
+
+	<description>
+		Sea View Real Estate Application
+	</description>
+
+	<author href="http://nikhilmishra.com"
+		email="n4niks@gmail.com">
+		Nikhil
+	</author>
+
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+	<preference name="orientation" value="portrait" />
+</widget>

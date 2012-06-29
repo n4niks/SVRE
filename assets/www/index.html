@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Smart-Estate</title>
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile-1.1.0.css" />
+	<link rel="stylesheet"  href="RealEstateApp.min.css" />
+   
+	<script type="text/javascript" src="jquery.mobile/jquery-1.7.2.min"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="jquery.mobile/jquery.mobile-1.1.0.js"></script>
+	
+	<!-- Uncomment following line to access PhoneGap APIs (not necessary to use PhoneGap to package web app) -->
+	<!-- <script type="text/javascript" charset="utf-8" src="cordova-1.6.1.js"></script>-->
+	<!-- CDN Respositories: For production, replace lines above with these uncommented minified versions -->
+	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />-->
+	<!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
+	<!-- <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>-->
+	</head> 
+<body> 
+<!--Page Header-->
+<div data-role="page" data-theme="a" id="dvIndex">
+        <div data-role="header" data-theme="a" data-position="fixed" data-tap-toggle="false">
+        <a rel="external" class="redirect" data-href="index.html" data-role="button" data-icon="home" data-iconpos="notext">Home</a>
+            <h1 style="height: 20px;">Sea View</h1>
+        </div>
+<!--/Page Header-->
+<!--Page Content-->
+   <div data-role="content" data-theme="a">
+        <div data-role="fieldcontain">
+      <table>
+      <tr>
+      <td><input type="text" style="width:250px;" name="txtProID" placeholder="Search for Property By ID" />
+    </td>
+    <td>
+    <a rel="external" data-href="index.html" data-inline="true" data-mini="true" data-role="button" data-icon="search" data-iconpos="notext" style="width:25px; float:right;">Search</a>
+      </td>
+      </tr>
+      </table>         
+    </div>
+                <a data-role="button" rel="external" class="redirect" data-href="propertylist.html" id="btnProList" data-mini="true" data-icon="arrow-r" data-iconpos="right">Featured Listing</a> 
+                <a data-role="button" data-mini="true" data-icon="arrow-r" data-iconpos="right">Advanced Search</a>
+          <div>
+            <fieldset class="ui-grid-a" style="border: 1px">
+                <div class="ui-block-a">
+                   <a data-role="button" href="tel:+919880425945" id="btnCall" data-icon="grid" data-iconpos="top">Call</a>
+                </div>
+                <div class="ui-block-b">
+                     <a rel="external" class="redirect" data-href="about.html" data-role="button" id="btnAbout" data-icon="info" data-iconpos="top">About</a>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+<!--/Page Content-->
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Smart-Estate</title>
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile-1.1.0.css" />
+	<link rel="stylesheet" href="docs/assets/css/jqm-docs.css" />
+	<link rel="stylesheet"  href="RealEstateApp.min.css" />
+   
+	<script type="text/javascript" src="jquery.mobile/jquery-1.7.2.min"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/details.js"></script>
+	<script type="text/javascript" src="jquery.mobile/jquery.mobile-1.1.0.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<!-- Uncomment following line to access PhoneGap APIs (not necessary to use PhoneGap to package web app) -->
+	<!-- <script type="text/javascript" charset="utf-8" src="cordova-1.6.1.js"></script>-->
+	<!-- CDN Respositories: For production, replace lines above with these uncommented minified versions -->
+	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />-->
+	<!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
+	<!-- <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>-->
+	</head> 
+<body> 
+    <div data-role="page" data-theme="a">
+        <!--Page Header-->
+        <div data-role="header" data-theme="a" data-tap-toggle="false" data-position="fixed">
+         <a class="redirect" rel="external" data-href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+         <a class="redirect" rel="external" data-href="propertylist.html" data-role="button" data-icon="back" data-iconpos="notext">Back</a>
+            <h1 style="height: 20px;">
+                402 Gold Hill Rd E
+            </h1>
+            </div>
+            <div data-role="content" data-theme="a">
+              <div data-role="navbar">
+                <ul>
+                    <li><a data-role="button" data-href="dvGallery">Gallery</a>
+                    </li>
+                    <li><a data-role="button" data-href="dvDetails">Details</a>
+                    </li>
+                    <li><a data-role="button" data-href="dvMap" id="btnMap" >Map</a> </li>
+                </ul>
+            </div>
+           </div>
+        <!--/Page Header-->
+        <!--Details Content-->
+        <div data-role="content" id="dvDetails" class="content_div">
+        <ul data-role="listview" data-inset="true" data-theme="a" >
+                <li class="liDetails"><label for="liType" class="detailslabel">Type:</label><span class="detailstext" id="liType">Residential</span></li>
+                <li class="liDetails"><label for="liStatus" class="detailslabel">Status:</label><span class="detailstext" id="liType">Active</span></li>
+                <li class="liDetails"><label for="liStyle" class="detailslabel">Style:</label><span class="detailstext" id="liType">Multilevel</span></li>
+                <li class="liDetails"><label for="liBedroom" class="detailslabel">Bedrooms:</label><span class="detailstext" id="liType">4</span></li>
+                <li class="liDetails"><label for="liBath" class="detailslabel">Bathrooms:</label><span class="detailstext" id="liType">3</span></li>
+                <li class="liDetails"><label for="liSize" class="detailslabel">Lot Size:</label><span class="detailstext" id="liType">0.11 Acres</span></li>
+                <li class="liDetails"><label for="liYear" class="detailslabel">Year:</label><span class="detailstext" id="liType">1978</span></li>
+                <li class="liDetails"><label for="liSchool" class="detailslabel">School:</label><span class="detailstext" id="liType">EnumClaw</span></li>
+                <li class="liDetails"><label for="liAnnual" class="detailslabel">Tax:</label><span class="detailstext" id="liType">$11,062</span></li>
+                <li class="liDetails"><label for="liCountry" class="detailslabel">Country:</label><span class="detailstext" id="liType">Pierce</span></li>
+             </ul>
+        </div>
+        <!--/Details Content-->
+        <!--Gallery Content-->
+        <div data-role="content" id="dvGallery" class="content_div">
+             <div id="dvImage" >
+                <img class="proimage" id="mainimage" src="images/p5.jpg" /></div>
+                <div class="ui-grid-g categories dvThumbnail">
+                <ul>
+				<li><div class="ui-block-a"><img class="thumbimage" src="images/p3.jpg" /></div></li>
+				<li><div class="ui-block-b"><img class="thumbimage" src="images/p7.jpg" /></div></li>
+				<li><div class="ui-block-c"><img class="thumbimage" src="images/p6.jpg" /></div></li>
+				<li><div class="ui-block-d"><img class="thumbimage" src="images/p4.jpg" /></div></li>
+				<li><div class="ui-block-e"><img class="thumbimage" src="images/p3.jpg" /></div></li>
+				<li><div class="ui-block-f"><img class="thumbimage" src="images/p7.jpg" /></div></li>
+				<li><div class="ui-block-g"><img class="thumbimage" src="images/p6.jpg" /></div></li>
+				<li><div class="ui-block-h"><img class="thumbimage" src="images/p4.jpg" /></div></li>
+				</ul>
+				</div><!-- /grid-b -->
+			</div>
+        <!--/Gallery Content-->
+        <!--Map content-->
+       <div data-role="content" class="content_div" id="dvMap" style="width:100%; height:320px;">
+        </div>
+        <!--/Map Content-->
+  </div>
+</body>
+</html>
